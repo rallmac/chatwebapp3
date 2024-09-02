@@ -10,7 +10,7 @@ socketio = SocketIO(app)
 
 
 # Route for the chat page
-@app.route('/chat')
+@app.route('/')
 def chat():
     return render_template('chat.html')
 
