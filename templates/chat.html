@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chat Room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
 </head>
 <body>
-	<h2>Chat Room</h2>
-	<div id="chat-box"></div>
-	<input id="message-input" type="text" placeholder="Type a message...">
-	<button id="send-button">Send</button>
+    <h2>Chat Room</h2>
+    <input id="username" placeholder="Enter your username">
+    <button onclick="setUsername()">Set Username</button>
 
+    <div id="chat">
+        <ul id="messages"></ul>
+    </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
-	<script src="{{ url_for('static', filename='/js/chat.js') }}"></script>
+    <label for="message">Type your message here</label>
+    <input id="message" autocomplete="off">
+    <button onclick="sendMessage()">Send</button>
+    <div>
+	<a href="http://localhost:5000/logout"><button>Logout</button></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='/js/chat.js') }}"></script>
 </body>
 </html>
