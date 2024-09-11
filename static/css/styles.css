@@ -2,60 +2,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: aqua; }
-header{
-  background-color: purple;
-  width: 100%;
-}
-.headercontainer{
-  border: 4px solid seagreen;
-}
-.headercontainer .nav ul{
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-}
-.headercontainer .nav ul li:hover{
-  background-color: wheat;
-  padding: 20px;
-}
-.navform:hover{
-  background-color: red;
-  padding: 0px;
-}
-
-
-.log_appname{
-  display: flex;
-  justify-content: space-around;
-}
-.log_appname{
-  color:blue;
-  font-size: 50px;
-  justify-items: center ;
-  margin-top: 30px;
-}
-.headercontainer .applogo{
-  color: brown;
- 
-  
-}
-.applogo img{
- 
-  border-radius: 50%;
-  height: 100px;
-}
-#h2{
-  color: darkorchid;
-  font-size: 100px;
-  
-}
-footer{
-  bottom: 0;
-  color: #218838;
-  border-top: 4px solid gold;
-  background-color: #007bff;
-}
+  background-color: wheat; }
 
 .content {
   max-width: 800px;
