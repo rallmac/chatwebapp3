@@ -1,6 +1,7 @@
 from . import db
 
 class Message(db.Model):
+    """ create database cntenet"""
     __tablename__ = 'messages'
     
     id = db.Column(db.Integer, primary_key=True)
